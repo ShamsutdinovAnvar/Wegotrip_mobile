@@ -13,6 +13,8 @@
 >
 > :heavy_check_mark: [Running tests from the terminal](#-Running-tests-from-the-terminal)
 >
+> :heavy_check_mark: [Integration with BrowserStack](#-Integration-with-BrowserStack)
+> 
 > :heavy_check_mark: [Run tests in Jenkins](#-Run-tests-in-Jenkins)
 >
 > :heavy_check_mark: [Test results report in Allure Report](#-Test-result-report-in-Allure-Report)
@@ -74,7 +76,13 @@
 ```bash
 gradle clean test
 ```
+## <img width="4%" title="BrowserStack" src="images/logo/browserstack-icon.svg"> Integration with [BrowserStack](https://app-automate.browserstack.com/dashboard/v2/builds/67e9d509eb68b1d41a7daedf8581e1551302861f)
 
+### :pushpin: The main dashboard
+
+<p align="center">
+  <img src="images/screens/Allure_TO.png" alt="dashboards" width="900">
+</p>
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Run tests in [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
 
