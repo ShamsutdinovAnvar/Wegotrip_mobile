@@ -4,6 +4,8 @@ import io.appium.java_client.AppiumBy;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -40,8 +42,8 @@ public class AndroidTests extends TestBase {
         $(AppiumBy.id("com.wegotrip.app:id/close")).click();
         $(AppiumBy.accessibilityId("Search…")).click();
         $(AppiumBy.id("com.wegotrip.app:id/search_src_text")).sendKeys("Berlin");
-        Thread.sleep(5000);
-        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Berlin, Germany"));
+//        Thread.sleep(5000);
+        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Berlin, Germany"), Duration.ofSeconds(10));
     }
 }
 
