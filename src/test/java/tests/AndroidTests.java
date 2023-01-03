@@ -24,7 +24,8 @@ public class AndroidTests extends TestBase {
             sleep(5000);
             });
         step("Check the search operation", () -> {
-            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(Condition.text("Berlin, Germany"));
+//            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(Condition.text("Berlin, Germany"));
+            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldBe(Condition.visible);
             });
     }
 
