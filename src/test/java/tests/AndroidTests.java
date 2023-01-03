@@ -4,10 +4,9 @@ import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.sleep;
 import static io.qameta.allure.Allure.step;
 
 public class AndroidTests extends TestBase {
@@ -22,7 +21,7 @@ public class AndroidTests extends TestBase {
             });
         step("Enter the required city", () -> {
             $(AppiumBy.id("com.wegotrip.app:id/search_src_text")).sendKeys("Berlin");
-            Thread.sleep(5000);
+            sleep(5000);
             });
         step("Check the search operation", () -> {
             $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(Condition.text("Berlin, Germany"));
