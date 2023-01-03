@@ -81,7 +81,7 @@ gradle clean test
 ### :pushpin: The main dashboard
 
 <p align="center">
-  <img src="images/screens/Allure_TO.png" alt="dashboards" width="900">
+  <img src="images/screens/browserstack.png" alt="dashboards" width="900">
 </p>
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Run tests in [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
