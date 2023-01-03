@@ -8,17 +8,25 @@ import org.openqa.selenium.WebDriver;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
+import static io.qameta.allure.Allure.step;
 
 public class AndroidTests extends TestBase {
     @SneakyThrows
     @Test
     void searchTest() {
-        $(AppiumBy.id("com.wegotrip.app:id/close")).click();
-        $(AppiumBy.accessibilityId("Search…")).click();
-        $(AppiumBy.id("com.wegotrip.app:id/search_src_text")).sendKeys("Berlin");
-
-        Thread.sleep(5000);
-        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(Condition.text("Berlin, Germany"));
+        step("Skip onboarding", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/close")).click();
+            });
+        step("Click on the search box", () -> {
+            $(AppiumBy.accessibilityId("Search…")).click();
+            });
+        step("Enter the required city", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/search_src_text")).sendKeys("Berlin");
+            Thread.sleep(5000);
+            });
+        step("Check the search operation", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(Condition.text("Berlin, Germany"));
+            });
     }
 
 //    @Test
