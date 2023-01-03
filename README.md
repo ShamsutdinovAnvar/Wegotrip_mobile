@@ -74,7 +74,7 @@
 ```bash
 gradle clean test
 ```
-```
+
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Run tests in [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
 
