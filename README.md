@@ -25,7 +25,7 @@
 >
 > :heavy_check_mark: [Notifications in Telegram using bot](#-Notifications-in-Telegram-using-bot)
 >
-> :heavy_check_mark: [Example of running test in Selenoid](#-Example-of-running-test-in-Selenoid)
+> :heavy_check_mark: [Example of running test in BrowserStack](#-Example-of-running-test-in-BrowserStack)
 
 ## :technologist: Tools and technologies
 
@@ -146,7 +146,7 @@ Report*</strong></code>, clicking on which will open a page with a generated htm
 <img title="Telegram Notifications" src="images/screens/Telegram.png">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Example of running test in Selenoid
+## <img width="4%" title="BrowserStack" src="images/logo/browserstack-icon"> Example of running test in BrowserStack
 
 > Video is attached to each test in the report.
 <p align="center">
