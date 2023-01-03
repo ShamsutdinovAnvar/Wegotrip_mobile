@@ -42,8 +42,8 @@ public class AndroidTests extends TestBase {
         $(AppiumBy.id("com.wegotrip.app:id/close")).click();
         $(AppiumBy.accessibilityId("Search…")).click();
         $(AppiumBy.id("com.wegotrip.app:id/search_src_text")).sendKeys("Berlin");
-//        Thread.sleep(5000);
-        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Berlin, Germany"), Duration.ofSeconds(10));
+        Thread.sleep(5000);
+        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Berlin, Germany"));
     }
 }
 
