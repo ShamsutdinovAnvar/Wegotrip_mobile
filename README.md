@@ -146,7 +146,7 @@ Report*</strong></code>, clicking on which will open a page with a generated htm
 <img title="Telegram Notifications" src="images/screens/Telegram.png">
 </p>
 
-## <img width="4%" title="BrowserStack" src="images/logo/browserstack-icon"> Example of running test in BrowserStack
+## <img width="4%" title="BrowserStack" src="images/logo/browserstack-icon.svg"> Example of running test in BrowserStack
 
 > Video is attached to each test in the report.
 <p align="center">
