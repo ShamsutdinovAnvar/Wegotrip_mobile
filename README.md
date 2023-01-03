@@ -61,17 +61,10 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UI
 
-> - [x] *Checking the operation of the button "Help"*
->- [x] *Checking the operation of the button "Favorites"*
->- [x] *Checking the operation of the button "Account"*
->- [x] *Checking the operation of the button "Explore all destinations"*
->- [x] *Checking city page title*
->- [x] *Checking block "Top attractions in city"*
->- [x] *Checking block "Popular cities to visit in country"*
->- [x] *Checking block "Top attractions in country"*
->- [x] *Checking authorization with login/password*
->- [x] *Checking search for attractions*
->- [x] *Checking search for cities*
+> - [x] *Checking the search operation*
+>- [x] *Checking the display of the first onboarding pag*
+>- [x] *Checking the display of the second onboarding page*
+>- [x] *Checking the display of the third onboarding page"*
 
 
 ## :computer: Running tests from the terminal 
@@ -81,29 +74,7 @@
 ```bash
 gradle clean test
 ```
-
-### Remote tests run
-
-```bash
-gradle clean test 
--Dbrowser=${BROWSER}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbrowserMobileView="${BROWSER_MOBILE}"
--DremoteDriverUrl=https://${LOGIN}:${PASSWORD}@${REMOTE_DRIVER_URL}/wd/hub/
--DvideoStorage=https://${REMOTE_DRIVER_URL}/video/
--Dthreads=${THREADS}
 ```
-
-### Build parameters
-
-> <code>REMOTE_URL</code> – the address of the remote server where the tests will be run.
->
-> <code>BROWSER</code> – the browser in which the tests will be run (by default - <code>chrome</code>_).
->
-> <code>BROWSER_VERSION</code> – the browser version in which the tests will be run (by default - <code>91.0</code>_).
->
-> <code>BROWSER_SIZE</code> – the size of the browser window in which the tests will be performed (by default - <code>1920x1080</code>_).
 
 ## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Run tests in [Jenkins](https://jenkins.autotests.cloud/job/AUTO-638/)
 
