@@ -5,6 +5,7 @@ import io.appium.java_client.AppiumBy;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 import static io.qameta.allure.Allure.step;
@@ -29,29 +30,39 @@ public class AndroidTests extends TestBase {
             });
     }
 
-//    @Test
-//    void firstScreenTest() {
-//        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Discover the world with self-guided audio tours"));
-//    }
-//
-//    @SneakyThrows
-//    @Test
-//    void secondScreenTest() {
-//        $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
-//        Thread.sleep(2000);
-//        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("All you need is your earphones"));
-//
-//    }
-//
-//    @SneakyThrows
-//    @Test
-//    void thirdScreenTest() {
-//        $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
-//        Thread.sleep(2000);
-//        $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
-//        Thread.sleep(2000);
-//        $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Audio tours work offline"));
-//
-//    }
+    @Test
+    void firstScreenTest() {
+        step("Check the display of the first onboarding page", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Discover the world with self-guided audio tours"));
+            });
+    }
+
+    @SneakyThrows
+    @Test
+    void secondScreenTest() {
+        step("Go to the second page of onboarding", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
+            Thread.sleep(2000);
+            });
+        step("Check the display of the second onboarding page", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("All you need is your earphones"));
+            });
+    }
+
+    @SneakyThrows
+    @Test
+    void thirdScreenTest() {
+        step("Go to the second page of onboarding", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
+            Thread.sleep(2000);
+            });
+        step("Go to the third page of onboarding", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/letmein")).click();
+            Thread.sleep(2000);
+            });
+        step("Check the display of the third onboarding page", () -> {
+            $(AppiumBy.id("com.wegotrip.app:id/title")).shouldHave(text("Audio tours work offline"));
+            });
+    }
 }
 
