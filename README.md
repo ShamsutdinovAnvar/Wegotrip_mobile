@@ -31,7 +31,8 @@
 
 <code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
 <code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
+<code><img width="5%" title="Browserstack" src="images/logo/browserstack-icon.svg"></code>
+<code><img width="5%" title="Appium" src="images/logo/appium.svg"></code>
 <code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
 <code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
 <code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
@@ -51,7 +52,7 @@
 >
 >*The tests are run from <code><strong>*Jenkins*</strong></code>.*
 >
->*<code><strong>*Selenoid*</strong></code> is used to launch browsers in containers  <code><strong>*Docker*</strong></code>.*
+>*<code><strong>*BrowserStack*</strong></code> provides developers instant access to a cloud platform that allows them to comprehensively test their websites and mobile applications on 2,500+ real devices and browsers.*
 >
 >*<code><strong>*Allure Report, Allure TestOps, Jira, Telegram Bot*</strong></code> are used to visualize test results.*
 
