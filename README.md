@@ -17,7 +17,7 @@
 > 
 > :heavy_check_mark: [Run tests in Jenkins](#-Run-tests-in-Jenkins)
 >
-> :heavy_check_mark: [Test results report in Allure Report](#-Test-result-report-in-Allure-Report)
+> :heavy_check_mark: [Test results report in Allure Report](#-Test-results-report-in-Allure-Report)
 > 
 > :heavy_check_mark: [Integration with Allure TestOps](#-Integration-with-Allure-TestOps)
 > 
