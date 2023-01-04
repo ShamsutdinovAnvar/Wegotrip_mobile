@@ -11,7 +11,7 @@
 >
 > :heavy_check_mark: [Implemented checks](#bookmark_tabs-Implemented-checks)
 >
-> :heavy_check_mark: [Running tests from the terminal](#-Running-tests-from-the-terminal)
+> :heavy_check_mark: [Running tests from the terminal](#computer-Running-tests-from-the-terminal)
 >
 > :heavy_check_mark: [Integration with BrowserStack](#-Integration-with-BrowserStack)
 > 
