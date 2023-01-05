@@ -65,4 +65,3 @@ public class AndroidTests extends TestBase {
             });
     }
 }
-

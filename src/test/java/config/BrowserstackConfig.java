@@ -6,7 +6,7 @@ import org.aeonbits.owner.Config;
         "classpath:${env}.properties"
 })
 
-public interface BrowserstackConfig extends Config{
+public interface BrowserstackConfig extends Config {
 
     @Config.Key("browserstackUser")
     @Config.DefaultValue("anvarshamsutdino_oYLIPh")

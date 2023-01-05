@@ -2,7 +2,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import drivers.BrowserstackMobileDriver;
-import helpers.Attach;
+import drivers.helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
